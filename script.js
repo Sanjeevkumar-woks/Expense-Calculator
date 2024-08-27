@@ -1,4 +1,4 @@
-// Get DOM elements
+// Getting DOM elements
 const descriptionInput = document.getElementById("description");
 const amountInput = document.getElementById("amount");
 const typeSelect = document.getElementById("type");

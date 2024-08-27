@@ -90,6 +90,31 @@ button:hover {
   box-sizing: border-box;
 }
 
+.date-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.date-filters label {
+  font-size: 1rem;
+}
+
+.date-filters select {
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.date-filters select:focus {
+  border-color: #007bff;
+}
+
 .entries {
   border: 2px solid #6a11cb;
   border-radius: 20px;
@@ -137,6 +162,7 @@ button:hover {
   transform: translateX(5px);
 }
 
+/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -146,33 +172,6 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Existing CSS rules */
-
-.date-filters {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.date-filters label {
-  font-size: 1rem;
-}
-
-.date-filters select {
-  padding: 10px 20px;
-  border: 2px solid transparent;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 10px;
-  outline: none;
-  background-color: #fff;
-}
-
-.date-filters select:focus {
-  border-color: #007bff;
 }
 
 /* Responsive Design */

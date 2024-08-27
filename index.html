@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Income Expense Calculator</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrQdM+V9omdSJCdeyJgU2Wrq9+E6niHiFWSd5aO5NQmcGQhe/fI5Z/XgXQF/sF6I6KvOCp64bPz1OjF+Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <h1>💰 Income Expense Calculator 💰</h1>
     <div class="container">
+      <!-- display-total -->
       <header>
         <div class="totals">
           <div class="total-item">
@@ -33,6 +27,7 @@
         </div>
       </header>
 
+      <!-- input-section -->
       <section class="entry-form">
         <input
           type="text"
@@ -53,6 +48,7 @@
         <button id="add-entry" class="add-btn">Add Entry</button>
       </section>
 
+      <!-- Filters -->
       <section class="filters">
         <label
           ><input type="radio" name="filter" value="all" checked /> All</label
@@ -76,6 +72,7 @@
         </select>
       </section>
 
+      <!-- Entries-list -->
       <section class="entries">
         <ul id="entries-list"></ul>
       </section>
