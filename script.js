@@ -39,6 +39,15 @@ function calculateTotals() {
 
 // Function to add entry to the list
 function addEntry(description, amount, type) {
+  // Check if the entry is an expense and if there's sufficient balance
+  if (type === "expense") {
+    const netBalance = parseFloat(netBalanceDisplay.textContent);
+    if (amount > netBalance) {
+      alert("You don't have sufficient balance to Make this expense.");
+      return;
+    }
+  }
+
   const entry = {
     id: Date.now(),
     description,
